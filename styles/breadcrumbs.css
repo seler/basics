@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* gallery.css */
+
+/**********************************************/
+/*** basics - the ultimate html, css and js ***/
+/*** framework for instant web page         ***/
+/**********************************************/
+/*** author: Rafał Selewońko @ seler.info   ***/
+/**********************************************/
+
+/* standard: */
+
+#breadcrumbs {
+    background-repeat:repeat-x;
+    overflow:hidden;
+}
+#breadcrumbs li {
+    list-style-type:none;
+    background-repeat:no-repeat;
+    background-position:right;
+    float:left;
+}
+#breadcrumbs li:last-child {
+	background:0;
+}
+#breadcrumbs a {
+    display:block;
+}
+/* custom: */
+
+#breadcrumbs {
+    font-size: 11px;
+    background-image:url('../images/breadcrumbs/bg.png');
+    height:30px;
+    line-height:30px;
+    color:#9b9b9b;
+    border:solid 1px #cacaca;
+	margin: 10px 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+#breadcrumbs li
+{
+    list-style-type:none;
+    float:left;
+    padding-left:10px;
+    background-image:url('../images/breadcrumbs/separator.png');
+    padding-right: 15px;
+}
+#breadcrumbs li:first-child a {
+	background: transparent url('../images/breadcrumbs/home.png') center center no-repeat;
+	text-indent: -999%;
+}
+#breadcrumbs a
+{
+    height:30px;
+    display:block;
+    text-decoration: none;
+    color:#454545;
+}
+#breadcrumbs a:hover {
+	text-decoration: underline;
+}

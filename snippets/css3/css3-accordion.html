@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="robots" content="index,follow" />
+		<meta name="author" content="Damian ferrante Wielgosik - http://ferrante.pl/o-mnie" />
+		<title>Accordion w CSS3 transitions</title>
+	</head>
+	<body>
+	<style>
+        body {
+            font: 0.82em/1.7 "Arial", sans-serif;
+            background: #1C1C1C;
+            padding:0;
+            margin:0;
+        }
+        #container {
+            margin: 100px auto;
+            width: 600px;
+        }
+        #container > nav {
+            background: #fff;
+            padding: 0;
+            margin:0;
+            position: relative;
+        }
+			
+			
+			
+			
+			
+			
+			nav ul {
+				list-style: none;
+				margin:0;
+				padding:0;
+                position: relative;
+			}
+			nav > ul > li {
+				float: left;
+			}
+			nav a {
+			    display: block;
+			    height: 30px;
+			    line-height: 30px;
+			    width: 100px;
+				background: #fff;
+			}
+			nav a:hover {
+			    background: red;
+			}
+			nav li ul {
+			    position: absolute;
+			}
+			nav li {
+			    position: relative;
+			}
+			nav li ul {
+				overflow: hidden;
+				opacity: 0;
+				-webkit-transition: opacity 0.5s ease-out, height 0.5s ease-out;
+				-moz-transition: opacity 0.5s ease-out, height 0.5s ease-out;
+				-o-transition: opacity 0.5s ease-out, height 0.5s ease-out;
+				transition: opacity 0.5s ease-out, height 0.5s ease-out;
+			}
+			nav li li ul {
+			    left: 100px;
+			}
+			nav li:hover > ul {
+			    opacity: 1;
+			}
+			
+			nav li li:hover > ul {
+			    top: 0;
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			.accordion p {
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				height: 0;
+				opacity: 0;
+				-webkit-transition: opacity 0.5s ease-out, height 0.5s ease-out;
+				-moz-transition: opacity 0.5s ease-out, height 0.5s ease-out;
+				-o-transition: opacity 0.5s ease-out, height 0.5s ease-out;
+				transition: opacity 0.5s ease-out, height 0.5s ease-out;
+			}
+			
+			.accordion h3 {
+				margin: 0;
+				padding: 0;
+				cursor: pointer;
+			}
+			
+			.accordion h3:hover + p, .accordion p:hover {
+				opacity: 1;
+				height: 130px; /* must be fixwed !!! */
+			}
+		</style>
+<div id="container">
+    <nav>
+        <ul>
+            <li><a href="3">Lorem ipsum</a>
+                <ul>
+                    <li><a href="3">Lorem ipsum</a>
+                        <ul>
+                            <li><a href="3">Lorem ipsum</a></li>
+                            <li><a href="3">Lorem ipsum</a></li>
+                            <li><a href="3">Lorem ipsum</a></li>
+                            <li><a href="3">Lorem ipsum</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="3">Lorem ipsum</a>
+                        <ul>
+                            <li><a href="3">Lorem ipsum</a></li>
+                            <li><a href="3">Lorem ipsum</a></li>
+                            <li><a href="3">Lorem ipsum</a></li>
+                            <li><a href="3">Lorem ipsum</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="3">Lorem ipsum</a>
+                        <ul>
+                            <li><a href="3">Lorem ipsum</a></li>
+                            <li><a href="3">Lorem ipsum</a></li>
+                            <li><a href="3">Lorem ipsum</a></li>
+                            <li><a href="3">Lorem ipsum</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="3">Lorem ipsum</a>
+                        <ul>
+                            <li><a href="3">Lorem ipsum</a></li>
+                            <li><a href="3">Lorem ipsum</a></li>
+                            <li><a href="3">Lorem ipsum</a></li>
+                            <li><a href="3">Lorem ipsum</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="3">Lorem ipsum</a>
+                <ul>
+                    <li><a href="3">Lorem ipsum</a></li>
+                    <li><a href="3">Lorem ipsum</a></li>
+                    <li><a href="3">Lorem ipsum</a></li>
+                    <li><a href="3">Lorem ipsum</a></li>
+                </ul>
+            </li>
+            <li><a href="3">Lorem ipsum</a>
+                <ul>
+                    <li><a href="3">Lorem ipsum</a></li>
+                    <li><a href="3">Lorem ipsum</a></li>
+                    <li><a href="3">Lorem ipsum</a></li>
+                    <li><a href="3">Lorem ipsum</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+	</body>
+</html>

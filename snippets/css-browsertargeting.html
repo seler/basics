@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+	<style>
+	    div {
+	        display: none;
+	    }
+	    /* any firefox */
+	    @-moz-document url-prefix() { .firefox { display: block; }}
+	    
+	    /* firefox 3+ */
+	    .firefox3,  x:-moz-any-link, x:default { display: block; }
+	    
+	    /* firefox 4+ */
+	    :-moz-any(.firefox4) { display: block; }
+    </style>
+</head>
+<body>
+    <div class="firefox">Firefox</div>
+    <div class="firefox3">Firefox 3+</div>
+    <div class="firefox4">Firefox 4+</div>
+    <div class="chrome">Chrome</div>
+    <div class="opera">Opera</div>
+</body>
+</html>

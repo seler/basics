@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* text.css */
+
+/**********************************************/
+/*** basics - the ultimate html, css and js ***/
+/*** framework for instant web page         ***/
+/**********************************************/
+/*** author: Rafał Selewońko @ seler.info   ***/
+/**********************************************/
+
+/* standard: */
+
+.text {
+/*
+	column-count: 2;
+	column-gap: 20px;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+*/
+} 
+
+.text blockquote,
+.text dd, .text div,
+.text dl, .text dt, .text fieldset, .text form,
+.text h1, .text h2, .text h3, .text h4,
+.text h5, .text h6,
+.text ol, .text p, .text ul,
+.text hr, .text menu, .text pre   { display: block }
+.text li              { display: list-item }
+.text head            { display: none }
+.text table           { display: table }
+.text tr              { display: table-row }
+.text thead           { display: table-header-group }
+.text tbody           { display: table-row-group }
+.text tfoot           { display: table-footer-group }
+.text col             { display: table-column }
+.text colgroup        { display: table-column-group }
+.text td, th          { display: table-cell }
+.text caption         { display: table-caption }
+.text th              { font-weight: bolder; text-align: center }
+.text caption         { text-align: center }
+.text body            { margin: 8px }
+.text h1              { font-size: 2em; margin: .67em 0 }
+.text h2              { font-size: 1.5em; margin: .75em 0 }
+.text h3              { font-size: 1.17em; margin: .83em 0 }
+.text h4, .text p,
+.text blockquote, .text ul,
+.text fieldset, .text form,
+.text ol, .text dl, .text dir,
+.text menu            { margin: 1.12em 0 }
+.text h5              { font-size: .83em; margin: 1.5em 0 }
+.text h6              { font-size: .75em; margin: 1.67em 0 }
+.text h1, .text h2, .text h3, .text h4,
+.text h5, .text h6, .text b,
+.text strong          { font-weight: bolder }
+.text blockquote      { margin-left: 40px; margin-right: 40px }
+.text i, .text cite, .text em,
+.text var, .text address    { font-style: italic }
+.text pre, .text tt, .text code,
+.text kbd, .text samp       { font-family: monospace }
+.text pre             { white-space: pre }
+.text button, .text textarea,
+.text input, .text select   { display: inline-block }
+.text big             { font-size: 1.17em }
+.text small, .text sub, .text sup { font-size: .83em }
+.text sub             { vertical-align: sub }
+.text sup             { vertical-align: super }
+.text table           { border-spacing: 2px; }
+.text thead, .text tbody,
+.text tfoot           { vertical-align: middle }
+.text td, .text th, .text tr      { vertical-align: inherit }
+.text s, .text strike, .text del  { text-decoration: line-through }
+.text hr              { border: 1px inset }
+.text ol, .text ul, .text dir,
+.text menu, .text dd        { margin-left: 40px }
+.text ol              { list-style-type: decimal }
+.text ol ul, .text ul ol,
+.text ul ul, .text ol ol    { margin-top: 0; margin-bottom: 0 }
+.text u, .text ins          { text-decoration: underline }
+.text br:before       { content: "\A"; white-space: pre-line }
+.text center          { text-align: center }
+.text :link, .text :visited { text-decoration: underline }
+.text :focus          { outline: thin dotted invert }
+
+.text /* Begin bidirectionality settings (do not change) */
+.text BDO[DIR="ltr"]  { direction: ltr; unicode-bidi: bidi-override }
+.text BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
+
+.text *[DIR="ltr"]    { direction: ltr; unicode-bidi: embed }
+.text *[DIR="rtl"]    { direction: rtl; unicode-bidi: embed }
+
+@media print {
+  .text h1            { page-break-before: always }
+  .text h1, .text h2, .text h3,
+  .text h4, .text h5, .text h6    { page-break-after: avoid }
+  .text ul, .text ol, .text dl    { page-break-before: avoid }
+} 
+.text pre {
+	background: #fff;
+	border:1px solid #CACACA;
+}
+.text code {
+	border-bottom: 1px dashed #CACACA;
+}
+.text .image {
+	border:1px solid #CACACA;
+	background: #fff;
+	padding: 5px;
+	margin: 5px;
+}
+.text .image.left {
+	float: left;
+	margin-left: 0;
+}
+.text .image.right {
+	float: right;
+	margin-right: 0;
+}
+.text .image a {
+	display:block;
+}
+.text .image p {
+	margin:5px 0 0 0;
+	text-align: center;
+}
+.text .image a span {
+	position: absolute;
+	display: none;
+}
+.text .image a:hover span {
+	display: block;
+}
+.text .image a span {
+	background: #fff url(../images/gallery/zoom.in.png) center center no-repeat;
+	opacity: .5;
+}
+.text cite:before, .text cite:after {
+	content: '"';
+}
+.text {
+    color: #3A3A3A;
+    font: 16px MyriadPro, Arial, Helvetica, sans-serif, normal;
+}
+.text p {
+	text-align: justify;
+}
