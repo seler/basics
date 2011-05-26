@@ -118,3 +118,15 @@ body {
 	width: 200px;
 	margin-left: 782px;
 }
+
+#container > footer {
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	padding: 0;
+}
+#container > footer .right {
+	position: absolute;
+	right:0;
+	top:0;
+}

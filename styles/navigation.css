@@ -151,6 +151,21 @@ nav.wide a:hover {
     height:28px;
     color: rgba(255,255,255,.8);
 }
+
+footer nav li {
+	display: table-cell;
+}
+footer nav li:after {
+	content: "|";
+}
+footer nav li:last-child:after {
+	content: "";
+}
+footer nav li a {
+	color: #000;
+	text-decoration: none;
+	padding: 0 5px;
+}
 /* horizontal */
 /*
 nav > ul {
