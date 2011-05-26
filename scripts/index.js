@@ -26,9 +26,12 @@
 function include(script) {
     document.write('<script type="text/javascript" src="'+script+'"></script>');
 }
-include('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');	//jquery
-include('scripts/jquery.easing-1.3.pack.js');	// Fancybox optional - Add transitions as jQuery by default supports only "swing" and "linear"
+//include('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');	//jquery
+include('scripts/jquery-1.6.1.min.js');
+include('scripts/jquery.easing.1.3.js');	// Fancybox and cycle optional - Add transitions as jQuery by default supports only "swing" and "linear"
 include('scripts/jquery.mousewheel-3.0.2.pack.js');	// Fancybox optional - Enable "mouse-wheel" to navigate throught gallery items
 include('scripts/jquery.fancybox-1.3.1.pack.js');	// fancybox
+include('scripts/jquery.cycle.all.min.js');	// slideshow
+include('scripts/layout.js');	//script for gallery
 include('scripts/gallery.js');	//script for gallery
 include('scripts/navigation.js');	//script for gallery
